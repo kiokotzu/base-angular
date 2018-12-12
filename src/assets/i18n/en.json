@@ -1,0 +1,24 @@
+{
+  "LOGIN": {
+    "MESSAGE": {
+      "TITLE": "Welcome!",
+      "TEXT": "Enter your information to login"
+    },
+    "PLACEHOLDER": {
+      "EMAIL": "Email",
+      "PASSWORD": "Password"
+    },
+    "ENTER": "Login",
+    "ERROR": {
+      "TITLE": "Ups",
+      "MESSAGE": "Verify your information"
+    },
+    "WElCOME": "Welcome",
+    "LOGOUT": "Logout",
+    "COPY": "All rights reserved."
+  },
+  "HEADER": {
+    "ADD_PRODUCT": "Add new product",
+    "MY_PRODUCTS": "My products"
+  }
+}

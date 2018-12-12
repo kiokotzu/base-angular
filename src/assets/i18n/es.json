@@ -1,0 +1,24 @@
+{
+  "LOGIN": {
+    "MESSAGE": {
+      "TITLE": "Bienvenido!",
+      "TEXT": "Ingrese sus datos para iniciar sesión"
+    },
+    "PLACEHOLDER": {
+      "EMAIL": "Correo electrónico",
+      "PASSWORD": "Contraseña"
+    },
+    "ENTER": "Ingresar",
+    "ERROR": {
+      "TITLE": "Ups",
+      "MESSAGE": "Verifica tus datos"
+    },
+    "WELCOME": "Bienvenido",
+    "LOGOUT": "Cerrar sesión",
+    "COPY": "Todos los derechos reservados."
+  },
+  "HEADER": {
+    "ADD_PRODUCT": "Agregar productos",
+    "MY_PRODUCTS": "Mis productos"
+  }
+}

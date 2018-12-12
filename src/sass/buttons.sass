@@ -1,0 +1,37 @@
+=btn-strong($color, $background, $font-size: 14px, $lineHeight: 40px, $borderRadius: 4px)
+  color: $color
+  background-color: $background
+  transition: .3s
+  line-height: $lineHeight
+  border-radius: $borderRadius
+  cursor: pointer
+  font-size: $font-size
+
+=btn-line($color, $background, $fontSize: 14px, $paddingLeftRight: 20px, $lineHeight: 40px, $borderRadius: 4px)
+  color: $background
+  background: transparent
+  transition: .3s
+  line-height: $lineHeight
+  cursor: pointer
+  position: relative
+  border-radius: $borderRadius
+  overflow: hidden
+  text-align: center
+  border: 1px solid $background
+  z-index: 1
+  padding: 0 $paddingLeftRight
+  font-size: $fontSize
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    height: 0
+    transition: .3s
+    background: $background
+    z-index: -1
+  &:hover
+    color: $color
+    &::after
+      height: 100%
