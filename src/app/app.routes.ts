@@ -4,6 +4,6 @@ export const ROUTES: Routes = [
   {
     path: '**',
     loadChildren: './modules/not-found/not-found.module#NotFoundModule',
-    data: {preload: true}
+    data: { preload: true }
   }
 ];
