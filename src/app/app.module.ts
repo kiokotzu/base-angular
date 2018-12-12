@@ -8,24 +8,26 @@ import { INITIAL_STATE, StoreModule } from '@ngrx/store';
 import { INITIAL_APPLICATION_STATE } from './store/state/application.state';
 import { environment as ENV } from '../environments/environment';
 import { onAppInit, translateConfig } from './app.translate';
-import { HeaderComponent } from './header/header.component';
 import { rootReducer } from './store/reducers/root.reducer';
 import { AppPreloadStrategy } from './app-preload-strategy';
 import { AppRoutingModule } from './app-routing.module';
+import { AuthModule } from './modules/auth/auth.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 
 export const REDUCER_TOKEN = new InjectionToken('Registered Reducers');
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    CoreModule,
+    AuthModule,
     TranslateModule.forRoot(translateConfig),
     StoreModule.forRoot(REDUCER_TOKEN),
     ENV.production ? StoreDevtoolsModule.instrument({  maxAge: 5 }) : []

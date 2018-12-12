@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
-import { TestingModule } from '../../../test-helpers/testing.module';
+import { TestingModule } from '../../../../../test-helpers/testing.module';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
