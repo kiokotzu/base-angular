@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeContainerComponent } from './home.container.component';
+import { TestingModule } from '../../../../test-helpers/testing.module';
 
 describe('HomeContainerComponent', () => {
   let component: HomeContainerComponent;
@@ -8,6 +9,9 @@ describe('HomeContainerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        TestingModule
+      ],
       declarations: [ HomeContainerComponent ]
     })
     .compileComponents();
