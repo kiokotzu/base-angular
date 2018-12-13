@@ -1,6 +1,6 @@
 export const ROUTES = [
   {
     path: '',
-    loadChildren: './modules/home/home.module#HomeModule'
+    loadChildren: 'app/modules/home/home.module#HomeModule'
   }
 ];

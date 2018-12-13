@@ -1,15 +1,11 @@
-import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
-import { ROUTES } from './app.routes';
-import { AppPreloadStrategy } from './app-preload-strategy';
+import { ROOT_OPTIONS, ROOT_ROUTES } from './app.routing';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(ROUTES, {
-    preloadingStrategy: AppPreloadStrategy,
-    initialNavigation: 'enabled'
-  })
+    RouterModule.forRoot(ROOT_ROUTES, ROOT_OPTIONS)
   ],
   exports: [ RouterModule ]
 })
