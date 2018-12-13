@@ -7,7 +7,7 @@ export const ROOT_ROUTES: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/'
+    loadChildren: 'app/modules/not-found/not-found.module#NotFoundModule'
   }
 ];
 
