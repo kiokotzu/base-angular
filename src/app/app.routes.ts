@@ -9,10 +9,10 @@ export const ROUTES: Routes = [
   {
     path: '',
     loadChildren: './modules/layout/layout.module#LayoutModule'
-  }
-  /*{
+  },
+  {
     path: '**',
     loadChildren: './modules/not-found/not-found.module#NotFoundModule',
     data: { preload: true }
-  }*/
+  }
 ];
