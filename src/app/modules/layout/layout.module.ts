@@ -5,6 +5,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LayoutModel } from '@modules/layout/layout.model';
 
 @NgModule({
   imports: [
@@ -15,6 +16,9 @@ import { FooterComponent } from './components/footer/footer.component';
     LayoutComponent,
     HeaderComponent,
     FooterComponent
+  ],
+  providers: [
+    LayoutModel
   ]
 })
 export class LayoutModule { }

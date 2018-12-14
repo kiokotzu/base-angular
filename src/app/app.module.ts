@@ -5,15 +5,15 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { BrowserModule } from '@angular/platform-browser';
 import { INITIAL_STATE, StoreModule } from '@ngrx/store';
 
-import { INITIAL_APPLICATION_STATE } from './store/state/application.state';
+import { INITIAL_APPLICATION_STATE } from '@store/state/application.state';
 import { environment as ENV } from '../environments/environment';
 import { onAppInit, translateConfig } from './app.translate';
-import { rootReducer } from './store/reducers/root.reducer';
+import { rootReducer } from '@store/reducers/root.reducer';
 import { AppPreloadStrategy } from './app-preload-strategy';
 import { AppRoutingModule } from './app-routing.module';
-import { AuthModule } from './modules/auth/auth.module';
+import { AuthModule } from '@modules/auth/auth.module';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
+import { CoreModule } from '@core/core.module';
 
 export const REDUCER_TOKEN = new InjectionToken('Registered Reducers');
 
@@ -30,7 +30,7 @@ export const REDUCER_TOKEN = new InjectionToken('Registered Reducers');
     AuthModule,
     TranslateModule.forRoot(translateConfig),
     StoreModule.forRoot(REDUCER_TOKEN),
-    ENV.production ? StoreDevtoolsModule.instrument({  maxAge: 5 }) : []
+    !ENV.production ? StoreDevtoolsModule.instrument({  maxAge: 5 }) : []
   ],
   providers: [
     AppPreloadStrategy,

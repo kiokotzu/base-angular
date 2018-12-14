@@ -1,12 +1,12 @@
 export interface UserState {
-  user: object;
+  user: string;
 }
 
 export type GlobalState = Readonly<{
-  user: UserState
+  user: string
 }>;
 
 
 export const INITIAL_MODELS_STATE: GlobalState = {
-  user: null
+  user: ''
 };
